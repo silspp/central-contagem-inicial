@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Central de Contagem</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Central de Eventos</h1>
+            <p>Prepare-se para o evento!</p>
+        </header>
+
+        <section class="cronometro">
+
+            <h2>Evento de Tecnologia</h2>
+
+            <label for="tempoInicial">
+                Informe o tempo em segundos:
+            </label>
+
+            <input
+                type="number"
+                id="tempoInicial"
+                min="1"
+                placeholder="Ex: 30"
+            >
+
+            <div id="contador">00:00</div>
+
+            <p id="mensagem">
+                Aguardando início...
+            </p>
+
+            <div class="barra">
+                <div id="progresso"></div>
+            </div>
+
+            <div class="botoes">
+                <button id="iniciar">Iniciar</button>
+                <button id="pausar">Pausar</button>
+                <button id="reiniciar">Reiniciar</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
